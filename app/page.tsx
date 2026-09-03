@@ -52,7 +52,7 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-600 mt-2">
-            Enter a phrase and let the AI determine its sentiment.
+            Enter a phrase and let the model determine its sentiment.
           </p>
         </div>
 
