@@ -24,8 +24,10 @@ app.add_middleware(
 
 
 # Load the Hugging Face sentiment model
-classifier = pipeline("sentiment-analysis")
-
+classifier = pipeline(
+    "sentiment-analysis",
+    model="distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+)
 
 class SentimentRequest(BaseModel):
     text: str
